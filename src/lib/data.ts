@@ -1,4 +1,4 @@
-import { PlaceholderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export type User = {
   name: string;
@@ -10,7 +10,7 @@ export type User = {
 export const mockUser: User = {
   name: 'Admin User',
   email: 'admin@junita.com',
-  avatar: PlaceholderImages.find(p => p.id === 'user-avatar')?.imageUrl || 'https://picsum.photos/seed/user-avatar/100/100',
+  avatar: PlaceHolderImages.find(p => p.id === 'user-avatar')?.imageUrl || 'https://picsum.photos/seed/user-avatar/100/100',
   role: 'ADMIN',
 };
 
