@@ -46,7 +46,7 @@ export function SidebarNav() {
         <SidebarMenu>
           {navItems.map((item) => (
             <SidebarMenuItem key={item.href}>
-              <Link href={item.href} legacyBehavior passHref>
+              <Link href={item.href}>
                 <SidebarMenuButton
                   isActive={pathname === item.href}
                   tooltip={item.label}
@@ -62,7 +62,7 @@ export function SidebarNav() {
       <SidebarFooter>
         <SidebarMenu>
             <SidebarMenuItem>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="/">
                     <SidebarMenuButton tooltip="Log Out">
                         <LogOut />
                         <span>Log Out</span>

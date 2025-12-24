@@ -60,14 +60,14 @@ export function AppHeader() {
               <UserIcon className="mr-2 h-4 w-4" />
               <span>Profile</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuItem asChild>
                 <Link href="/settings" className='flex items-center w-full'>
                     <Settings className="mr-2 h-4 w-4" />
                     <span>Settings</span>
                 </Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem asChild>
                 <Link href="/" className='flex items-center w-full'>
                     <LogOut className="mr-2 h-4 w-4" />
                     <span>Log out</span>
