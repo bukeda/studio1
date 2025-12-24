@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Logo } from '@/components/logo';
 import Image from 'next/image';
-import { PlaceholderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function LoginPage() {
     router.push('/dashboard');
   };
 
-  const heroImage = PlaceholderImages.find(p => p.id === 'login-hero');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'login-hero');
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4">
